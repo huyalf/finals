@@ -1,0 +1,103 @@
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-size: 16px;
+}
+header {
+    background-color: grey;
+}
+
+nav {
+    background-color: green;
+}
+
+main {
+    background-color: yellowgreen;
+    font-size: 18px;
+}
+
+footer {
+    background-color: cyan;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    width: 150px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    color: #4a4a4a;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.skip-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    z-index: 1000;
+    text-decoration: none;
+    opacity: 0;
+}
+
+.skip-link:focus {
+    opacity: 1;
+    top: 10px;
+}
+
+.flex-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+}
+
+.flex-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.flex-nav ul li a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.flex-nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+img {
+    border: 2px solid #ccc;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.grid-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.grid-gallery img:nth-child(odd) {
+    border-radius: 15px;
+}
+
+.grid-gallery img:nth-child(even) {
+    border-radius: 0px;
+}
